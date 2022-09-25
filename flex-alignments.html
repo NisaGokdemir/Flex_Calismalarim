@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+
+        /*justify-content: center; justify-content yatayda hizalamak için kullanılır*/
+        /*justify-content: flex-start; default mod*/
+        /*justify-content: flex-end; sona hizalar*/
+
+        /*justify-content: space-around; başta ve sonda 2x boşluk bırakırken aralarında x kadar bırakır 2x x x x x 2x */
+        /*justify-content: space-between; aralarında x kadar boşluk bırakır x x x x */
+        /*justify-content: space-evenly; başta sonda ve aralarında eşit boşluk bırakır */
+
+        /*align-items: stretch; dikey hizalama için kullanılır*/
+        /*align-items: flex-start; içerik en üstte yer kaplar*/
+        /*align-items: center; içerik kadar yüksekliğin ortasında yer kaplar*/
+
+        /*BU YAPTIKLARIMIZI ROW(satır) OLARAK YAPTIK EĞER COLUMN(sütun) OLARAK YAPSAYDIK JUSTIFY CONTENT DİKEYİ KONUMLANDIRIRDI, ALIGN ITEMS DE YATAYI KONUMLANDIRIRDI*/
+        height: 500px;
+        background-color: #034f84;
+        padding: 15px;
+      }
+
+      .item {
+        background-color: #f7786b;
+        padding: 30px;
+        margin: 20px;
+        color: #fff;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+    </div>
+  </body>
+</html>

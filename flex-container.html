@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+
+        /* flex-direction: column; satır şeklinde yan yana getirir*/
+        /* flex-direction: row; sütun şeklinde yan yana getirir*/
+        /* flex-direction: column-reverse; satırda tersten yazar*/
+
+        /*flex-wrap: nowrap / wrap ekran küçülünce kutuları sırayla aşağı alır reverse de yukarı alır tersten*/
+
+        flex-flow: row wrap; /*ilk değeri direction, ikincisi wrap özelliği*/
+
+        background-color: #034f84;
+        padding: 15px;
+      }
+
+      .item {
+        background-color: #f7786b;
+        padding: 30px;
+        margin: 20px;
+        color: #fff;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+    </div>
+  </body>
+</html>

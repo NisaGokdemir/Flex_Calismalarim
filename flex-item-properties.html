@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+
+        background-color: #034f84;
+        height: 500px;
+      }
+
+      .item {
+        background-color: #f7786b;
+        padding: 30px;
+        margin: 20px;
+        color: #fff;
+        font-size: 25px;
+
+        /* flex: 0 0 200px; grow shrink basis sırayla*/
+      }
+
+      .item-1 {
+        flex-grow: 1; /*diğer itemlerden kalan alanın hepsine yayılır, iki iteme verirsek oranlayarak rakam vererbiliriz. 0 verirsek defaut modu olur*/
+        order: 2; /*sırasını değiştirebiliriz*/
+      }
+
+      .item-2 {
+        flex-basis: 200px; /*başlangıç genişliği 200px olur fakat ekran küçülürse 200px içerik kadar yer kaplar*/
+        flex-shrink: 0; /*1 varsayılan değeridir, 0 verirsek 200px ekran küçülse dahi öyle kalır*/
+      }
+
+      .item-3 {
+        flex: 25%; /*satırın yüzde 25 ini kaplar*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+    </div>
+  </body>
+</html>
